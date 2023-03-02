@@ -1,0 +1,19 @@
+
+// ALGORITMO ORDENACION POR INSERCION CON INTERCAMBIOS
+
+
+int tmp, pos;
+
+	for (int i = 1; i < N; i++){
+		pos = i;
+		while (pos > 0 && lista[pos] < lista[pos - 1]){
+				tmp = lista[pos];
+				lista[pos] = lista[pos - 1];
+				lista[pos - 1] = tmp;
+				pos--;
+		}
+	}
+	
+	/*
+	OJO: ES DESDE EL SEGUNDO ELEMENTO
+	*/
